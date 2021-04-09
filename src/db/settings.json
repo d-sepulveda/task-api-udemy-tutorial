@@ -1,0 +1,5 @@
+{
+  "instantMongo": {
+    "connections": [{ "name": "New Connection", "uri": "localhost:27017" }]
+  }
+}
