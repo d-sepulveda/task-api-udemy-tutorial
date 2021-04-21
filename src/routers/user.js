@@ -64,7 +64,7 @@ router.delete("/users/me/avatar", auth, async (req, res) => {
   try {
     req.user.avatar = null;
     await req.user.save;
-    res.send({ success: true, response: req.user });
+    res.send({ success: true, response: "Your account has been delete" });
   } catch (error) {
     res.status(500).send({ success: false, error: "something went wrong." });
   }
